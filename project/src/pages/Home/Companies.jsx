@@ -25,11 +25,10 @@ const Companies = () => {
         {/* Add the text component outside the grid */}
         <div className="md:flex md:top-0 md:bottom-0 md:absolute md:self-center md:w-full md:ml-[-4rem]">
           <p
-            className="font-medium text-2xl md:-rotate-90 uppercase text-center  text-Black sm:mt-4 rounded-sm inline-flex md:absolute md:left-0 md:transform -translate-y-1/2 md:pb-28 "
+            className="whitespace-pre-wrap font-medium text-2xl md:-rotate-90 uppercase text-center  text-Black sm:mt-4 rounded-sm inline-flex md:absolute md:left-0 md:transform -translate-y-1/2 md:pb-28 "
             style={{ zIndex: 1 }}
           >
-            Explore new and <br />
-            popular styles
+            {"Explore new and\npopular styles"}
           </p>
         </div>
 
