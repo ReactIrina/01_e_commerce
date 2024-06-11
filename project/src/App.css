@@ -15,7 +15,7 @@ body {
   background-color: #cc1100;
   font-weight: 400;
   font-size: large;
-  padding: 0 8px;
+  padding: 2px 8px;
 }
 
 a:hover {
@@ -27,8 +27,6 @@ a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: none;
-  /* padding-right: 1rem;  */
-  /* Adjust the padding to control the arrow position */
 }
 
 .custom-select option {
@@ -47,4 +45,33 @@ nav {
 
 [x-cloak] {
   display: none;
+}
+
+.card {
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .bottom-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .bottom-overlay {
+  opacity: 1;
 }

@@ -291,9 +291,9 @@ const Products = () => {
     setSelectedCategory(category);
   };
 
-  const handleSortChange = (option) => {
-    setSortOption(option);
-  };
+  // const handleSortChange = (option) => {
+  //   setSortOption(option);
+  // };
 
   const showAll = () => {
     setSelectedCategory("all");
@@ -301,7 +301,7 @@ const Products = () => {
 
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-28 px-4 mb-12">
-      <h2 className="text-3xl font-semibold capitalize text-center my-8">
+      <h2 className="text-3xl text-TextColor font-semibold capitalize text-center my-8">
         New arrivals
       </h2>
 
@@ -334,15 +334,15 @@ const Products = () => {
             </button>
           </div>
 
-          <div className="flex justify-end mb-4 rounded">
-            <div className="bg-Black p-2">
+          <div className="flex justify-end mb-4">
+            <div className="bg-Black pt-2 pb-2 pl-3">
               <FaFilter className="text-white h-4 w-4" />
             </div>
             <select
               id="sort"
-              onChange={(e) => handleSortChange(e.target.value)}
+              onChange={(e) => setSortOption(e.target.value)}
               value={sortOption}
-              className="bg-Black text-white px-4 py-1 w-20 custom-select"
+              className="bg-Black text-white pl-2 pr-1 py-1 custom-select"
             >
               <option value="default">Filter</option>
               <option value="A-Z">A-Z</option>

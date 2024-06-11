@@ -2,6 +2,7 @@
 import Banner from "./Banner";
 import Companies from "./Companies";
 import Products from "./Products";
+import Collections from "./Collections";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <Companies className="w-full mx-auto" />
       <Products />
+      <Collections />
     </div>
   );
 };

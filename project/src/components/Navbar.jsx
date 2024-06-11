@@ -3,13 +3,6 @@ import { FaBars, FaSearch, FaShoppingBag, FaUser } from "react-icons/fa";
 import logo from "/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
-  };
-
   const navItems = [
     { title: "Jewelry & Accessories", path: "/" },
     { title: "Clothing & Shoes", path: "/" },
@@ -19,6 +12,13 @@ const Navbar = () => {
     { title: "Art & Collectibles", path: "/" },
     { title: "Craft Supplies & Tools", path: "/" },
   ];
+
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
 
   return (
     <header className="max-w-screen-2xl xl:px-28 px-4 mx-auto absolute top-0 left-0 right-0">

@@ -10,7 +10,7 @@ const companyLogo = [
 
 const Companies = () => {
   return (
-    <div className="max-w-screen-2xl container xl:px-16 px-4 py-16">
+    <div className="max-w-screen-2xl container xl:px-16 px-1 py-16">
       {/* brand logo */}
       <div className="flex items-center justify-around flex-wrap gap-4 py-5">
         {companyLogo.map(({ id, img }) => (
@@ -22,7 +22,7 @@ const Companies = () => {
 
       {/* category grid */}
       <div className="flex relative flex-col md:flex-row items-center gap-4 mt-8">
-        {/* Add the text component outside the grid */}
+        {/* Text component outside the grid */}
         <div className="md:flex md:top-0 md:bottom-0 md:absolute md:self-center md:w-full md:ml-[-4rem]">
           <p
             className="whitespace-pre-wrap font-medium text-2xl md:-rotate-90 uppercase text-center  text-Black sm:mt-4 rounded-sm inline-flex md:absolute md:left-0 md:transform -translate-y-1/2 md:pb-28 "
@@ -32,18 +32,18 @@ const Companies = () => {
           </p>
         </div>
 
-        <div className="max-w-screen-xl flex flex-col md:flex-row items-center gap-4 mt-8 md:ml-14 ">
+        <div className="max-w-screen-2xl flex flex-col md:flex-row items-center gap-4 mt-8 md:ml-12  ">
           <div>
             <Link to="/">
               <img
                 src="/images/category/image1.png"
                 alt=""
-                className="rounded hover:scale-105 transition-all  duration-200"
+                className="rounded hover:scale-105 transition-all duration-200"
               />
             </Link>
           </div>
-          <div className="md:w-1/2">
-            <div className="grid grid-cols-2 gap-2">
+          <div className="md:w-1/2 ">
+            <div className="grid grid-cols-2 gap-4 ">
               <Link to="/">
                 <img
                   src="/images/category/image2.png"
