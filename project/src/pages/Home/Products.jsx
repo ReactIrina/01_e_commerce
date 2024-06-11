@@ -103,17 +103,17 @@ const Products = () => {
             </button>
           </div>
 
-          <div className="flex justify-end mb-4 rounded-sm">
-            <div className="bg-Black p-2 ">
+          <div className="flex justify-end mb-4 rounded">
+            <div className="bg-Black p-2">
               <FaFilter className="text-white h-4 w-4" />
             </div>
             <select
               id="sort"
               onChange={(e) => handleSortChange(e.target.value)}
               value={sortOption}
-              className="bg-Black text-white px-2 py-1"
+              className="bg-Black text-white px-4 py-1 w-20 custom-select"
             >
-              <option value="default"> Default</option>
+              <option value="default"> Filter</option>
               <option value="A-Z">A-Z</option>
               <option value="Z-A">Z-A</option>
               <option value="low-to-high">Low to High</option>

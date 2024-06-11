@@ -14,6 +14,19 @@ a:hover {
   color: #cc1100;
 }
 
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+  /* padding-right: 1rem;  */
+  /* Adjust the padding to control the arrow position */
+}
+
+.custom-select option {
+  background-color: black;
+}
+
 header,
 nav {
   z-index: 10001 !important;
