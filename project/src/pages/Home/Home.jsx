@@ -6,9 +6,9 @@ import Collections from "./Collections";
 
 const Home = () => {
   return (
-    <div className="max-w-screen-2xl container mx-auto ">
+    <div>
       <Banner />
-      <Companies className="w-full mx-auto" />
+      <Companies />
       <Products />
       <Collections />
     </div>

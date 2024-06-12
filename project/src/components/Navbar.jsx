@@ -3,15 +3,15 @@ import { FaBars, FaSearch, FaShoppingBag, FaUser } from "react-icons/fa";
 import logo from "/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 
-  const navItems = [
-    { title: "Jewelry & Accessories", path: "/" },
-    { title: "Clothing & Shoes", path: "/" },
-    { title: "Home & Living", path: "/" },
-    { title: "Wedding & Party", path: "/" },
-    { title: "Toys & Entertainment", path: "/" },
-    { title: "Art & Collectibles", path: "/" },
-    { title: "Craft Supplies & Tools", path: "/" },
-  ];
+const navItems = [
+  { title: "Jewelry & Accessories", path: "/jewelry-accessories" },
+  { title: "Clothing & Shoes", path: "/clothing-shoes" },
+  { title: "Home & Living", path: "/home-living" },
+  { title: "Wedding & Party", path: "/wedding-party" },
+  { title: "Toys & Entertainment", path: "/toys-entertainment" },
+  { title: "Art & Collectibles", path: "/art-collectibles" },
+  { title: "Craft Supplies & Tools", path: "/craft-supplies-tools" },
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,10 +46,28 @@ const Navbar = () => {
       <hr />
       {/* nav items */}
       <div className="pt-4">
-        <ul className="lg:flex items-center justify-between text-Icons hidden">
-          {navItems.map(({ title }) => (
+        <ul className="lg:flex items-center justify-between text-Icons text-sm hidden">
+          <li>
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                isActive ? "text-active" : "text-inactive"
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          {navItems.map(({ title, path }) => (
             <li key={title}>
-              <NavLink to="/">{title}</NavLink>
+              <NavLink
+                to={path}
+                className={({ isActive }) =>
+                  isActive ? "text-active" : "text-inactive"
+                }
+              >
+                {title}
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -57,15 +75,33 @@ const Navbar = () => {
 
       {/* mobile menu items */}
       <ul
-        className={`bg-Icons text-white hover: px-4 py-2 rounded ${
+        className={`bg-Icons text-white hover: px-4 py-2 rounded text-xs ${
           isMenuOpen ? "" : "hidden"
         }`}
       >
+        <li className="my-3 cursor-pointer">
+          <NavLink
+            to="/"
+            end
+            onClick={toggleMenu}
+            className={({ isActive }) =>
+              isActive ? "text-active" : "text-inactive"
+            }
+          >
+            Home
+          </NavLink>
+        </li>
         {navItems.map(({ title, path }) => (
           <li key={title} className="my-3 cursor-pointer">
-            <Link to={path} onClick={toggleMenu} className="dropdown-link">
+            <NavLink
+              to={path}
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive ? "text-active" : "text-inactive"
+              }
+            >
               {title}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
