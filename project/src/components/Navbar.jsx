@@ -4,13 +4,13 @@ import logo from "/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 
 const navItems = [
-  { title: "Jewelry & Accessories", path: "/jewelry-accessories" },
-  { title: "Clothing & Shoes", path: "/clothing-shoes" },
-  { title: "Home & Living", path: "/home-living" },
-  { title: "Wedding & Party", path: "/wedding-party" },
-  { title: "Toys & Entertainment", path: "/toys-entertainment" },
-  { title: "Art & Collectibles", path: "/art-collectibles" },
-  { title: "Craft Supplies & Tools", path: "/craft-supplies-tools" },
+  { title: "Jewelry & Accessories", path: "/" },
+  { title: "Clothing & Shoes", path: "/" },
+  { title: "Home & Living", path: "/" },
+  { title: "Wedding & Party", path: "/" },
+  { title: "Toys & Entertainment", path: "/" },
+  { title: "Art & Collectibles", path: "/" },
+  { title: "Craft Supplies & Tools", path: "/" },
 ];
 
 const Navbar = () => {

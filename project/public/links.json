@@ -1,0 +1,28 @@
+{
+  "socialMediaLinks": [
+    { "icon": "FaFacebookF", "link": "https://www.facebook.com" },
+    { "icon": "FaTwitter", "link": "https://www.twitter.com" },
+    { "icon": "FaLinkedinIn", "link": "https://www.linkedin.com" }
+  ],
+  "catalogLinks": [
+    { "title": "Necklaces", "link": "/" },
+    { "title": "Hoodies", "link": "/" },
+    { "title": "Jewelry Box", "link": "/" },
+    { "title": "T-shirt", "link": "/" },
+    { "title": "Jacket", "link": "/" }
+  ],
+  "customerServicesLinks": [
+    { "title": "Contact Us", "link": "/" },
+    { "title": "Track Your Order", "link": "/" },
+    { "title": "Product Care & Repair", "link": "/" },
+    { "title": "Book an Appointment", "link": "/" },
+    { "title": "Shipping & Returns", "link": "/" }
+  ],
+  "aboutUsLinks": [
+    { "title": "Our Producers", "link": "/" },
+    { "title": "Sitemap", "link": "/" },
+    { "title": "FAQ", "link": "/" },
+    { "title": "About Us", "link": "/" },
+    { "title": "Terms & Conditions", "link": "/" }
+  ]
+}
