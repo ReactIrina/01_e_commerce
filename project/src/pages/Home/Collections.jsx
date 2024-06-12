@@ -10,7 +10,7 @@ const Collections = () => {
             exclusively offered at the reopened Giorgio Armani boutique in Los
             Angeles.
           </p>
-          <button className="bg-white text-Brand font-normal px-6 py-2 capitalize rounded hover:-translate-y-2 transition-all duration-300">
+          <button className="bg-white text-Brand font-normal px-6 py-2 capitalize rounded hover:text-white hover:bg-Brand transition-all duration-300">
             See collection
           </button>
         </div>
