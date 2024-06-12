@@ -46,27 +46,17 @@ nav {
 [x-cloak] {
   display: none;
 }
-
-.card {
-  position: relative;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card .bottom-overlay {
+/* .card .bottom-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  max-height: 40px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: #1e2832;
   color: white;
   opacity: 0;
   transition: opacity 0.3s;
@@ -74,4 +64,39 @@ nav {
 
 .card:hover .bottom-overlay {
   opacity: 1;
+}
+
+.card .overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%; /* Adjust height as needed */
+/* }  */
+.card .bottom-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e2832;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .bottom-overlay {
+  opacity: 1;
+}
+
+.card .overlay-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 20%; /* Adjust height as needed */
 }
