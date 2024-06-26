@@ -5,7 +5,7 @@
     "category": "Dress",
     "price": 63.85,
     "image": "/images/products/image1.png",
-    "status": "Best Selers"
+    "status": "Best Sellers"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "category": "Bags",
     "price": 130.0,
     "image": "/images/products/image2.png",
-    "status": "Best Selers"
+    "status": "Best Sellers"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "category": "Dress",
     "price": 53.0,
     "image": "/images/products/image3.png",
-    "status": "Best Selers"
+    "status": "Best Sellers"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "category": "Shoes",
     "price": 198.0,
     "image": "/images/products/image6.png",
-    "status": "Best Selers"
+    "status": "Best Sellers"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "category": "Hoodies",
     "price": 120.5,
     "image": "/images/products/image7.png",
-    "status": "Best Selers"
+    "status": "Best Sellers"
   },
   {
     "id": 8,
